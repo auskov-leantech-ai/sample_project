@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/galleryFragment"
+        android:icon="@drawable/ic_image_navigation_bar_home"
+        android:title="@string/bottom_gallery" />
+    <item
+        android:id="@+id/mapsFragment"
+        android:icon="@drawable/ic_image_navigation_bar_search"
+        android:title="@string/bottom_map" />
+    <item
+        android:icon="@drawable/ic_image_navigation_bar_add"
+        android:title="@string/bottom_add" />
+    <item
+        android:id="@+id/chatFragment"
+        android:icon="@drawable/ic_image_navigation_bar_chat"
+        android:title="@string/bottom_chat" />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_image_navigation_bar_profile"
+        android:title="@string/bottom_profile" />
+</menu>

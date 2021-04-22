@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_gallery"
+    app:startDestination="@id/photoGalleryFragment2">
+
+    <fragment
+        android:label="photoGalleryFragment2"
+        android:id="@+id/photoGalleryFragment2"
+        android:name="com.example.github.sample.presentation.gallery_photo.PhotoGalleryFragment"
+        tools:layout="@layout/fragment_gallery_photo">
+        <action
+            android:id="@+id/action_photoGalleryFragment2_to_actionChoicePhotoDialog"
+            app:destination="@id/actionChoicePhotoDialog" />
+        <action
+            android:id="@+id/action_photoGalleryFragment2_to_galleryPhotoDetailsFragment"
+            app:destination="@id/galleryPhotoDetailsFragment" />
+    </fragment>
+    <dialog
+        android:label="actionChoicePhotoDialog"
+        android:id="@+id/actionChoicePhotoDialog"
+        android:name="com.example.github.sample.presentation.action_choice_dialog.ActionChoicePhotoDialog"
+        tools:layout="@layout/fragment_action_choice_dialog" />
+    <fragment
+        android:id="@+id/galleryPhotoDetailsFragment"
+        android:name="com.example.github.sample.presentation.gallery_photo_details.GalleryPhotoDetailsFragment"
+        tools:layout="@layout/fragment_gallery_photo_details" >
+        <argument
+            android:name="positionImage"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+</navigation>

@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Sample Project</string>
+
+    <!--WelcomeFragment-->
+    <string name="welcome_register">REGISTER</string>
+    <string name="welcome_log_in">LOG IN</string>
+    <!--/WelcomeFragment-->
+
+    <!--RegisterFragment-->
+    <string name="register_next">NEXT</string>
+    <string name="register_hint_jane_example_com">jane@example.com</string>
+    <string name="register_hint_password">*********</string>
+    <string name="register_register_text">Register</string>
+    <string name="register_enter_email">Type your email</string>
+    <string name="register_enter_password">Type your password</string>
+    <string name="register_confirm_password">Repeat password</string>
+    <string name="register_password_mismatch">Passwords doesn\'t match</string>
+    <string name="register_successful_registration">Successfully registered!</string>
+    <!--/RegisterFragment-->
+
+    <!--LoginFragment-->
+    <string name="login_log_in_text">Log in</string>
+    <string name="login_hint_jane_example_com">jane@example.com</string>
+    <string name="login_hint_password">*********</string>
+    <string name="login_successfully_logged_in">Successfully logged in!</string>
+    <!--/LoginFragment-->
+
+    <!--BottomMenu-->
+    <string name="bottom_home">Home</string>
+    <string name="bottom_search">Search</string>
+    <string name="bottom_map">Map</string>
+    <string name="bottom_add">Add</string>
+    <string name="bottom_chat">Chat</string>
+    <string name="bottom_profile">Profile</string>
+    <string name="bottom_gallery">Gallery</string>
+    <!--/BottomMenu-->
+
+    <!--PhotoGalleryFragment-->
+    <string name="photo_gallery_document_editing">Edit</string>
+    <string name="photo_gallery_rename">Rename</string>
+    <string name="photo_gallery_add_text">Add</string>
+    <!--/PhotoGalleryFragment-->
+
+    <!--ActionChoicePhotoDialog-->
+    <string name="photo_dialog_choose_photo">Select photo</string>
+    <string name="photo_dialog_take_photo">Take photo</string>
+    <string name="photo_dialog_cancellation">Cancel</string>
+    <string name="photo_gallery_add_button">Add</string>
+    <!--/ActionChoicePhotoDialog-->
+
+    <!--GalleryPhotoDetailsFragment-->
+    <string name="gallery_photo_details_image">%1$d of %2$d</string>
+    <!--/GalleryPhotoDetailsFragment-->
+</resources>

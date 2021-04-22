@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image_view_register_back_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_40"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="@dimen/dp_4"
+        android:src="@drawable/ic_image_button_back"
+        app:layout_constraintBottom_toTopOf="@id/text_view_register"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view_register"
+        style="@style/Heading.Filled"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_32"
+        android:gravity="start"
+        android:text="@string/register_register_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_view_register_back_welcome" />
+
+    <EditText
+        android:id="@+id/edit_text_register_email"
+        style="@style/Edit.Filled"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_32"
+        android:hint="@string/register_hint_jane_example_com"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_register" />
+
+    <EditText
+        android:id="@+id/edit_text_register_password"
+        style="@style/Edit.Filled"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        android:layout_marginVertical="@dimen/dp_16"
+        android:hint="@string/register_hint_password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_register_email" />
+
+    <EditText
+        android:id="@+id/edit_text_register_password_repeat"
+        style="@style/Edit.Filled"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        android:layout_marginVertical="@dimen/dp_16"
+        android:hint="@string/register_hint_password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_register_password" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_register"
+        style="@style/AppTheme.ButtonBlack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        android:layout_marginVertical="@dimen/dp_16"
+        android:text="@string/register_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_register_password_repeat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image_view_photo"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginVertical="@dimen/dp_16"
+        android:background="@drawable/background_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/text_view_name_photo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_24"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_rename"
+        app:layout_constraintEnd_toStartOf="@+id/image_view_delete"
+        app:layout_constraintStart_toEndOf="@+id/image_view_photo"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Название фотографии" />
+
+    <TextView
+        android:id="@+id/text_view_rename"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        android:text="@string/photo_gallery_rename"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintBottom_toBottomOf="@+id/image_view_photo"
+        app:layout_constraintEnd_toStartOf="@+id/image_view_delete"
+        app:layout_constraintStart_toEndOf="@+id/image_view_photo"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_name_photo" />
+
+    <ImageView
+        android:id="@+id/image_view_delete"
+        android:layout_width="@dimen/dp_48"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintBottom_toBottomOf="@+id/image_view_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image_view_photo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
